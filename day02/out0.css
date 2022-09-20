@@ -1,0 +1,18 @@
+body{
+    background-color: yellow;
+    color: green;
+}
+
+h3{color: blue;}
+
+button{
+    background-color: lime;
+    color: darkblue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+input{
+    background: gainsboro;
+    text-align: center;
+}

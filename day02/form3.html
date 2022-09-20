@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="out0.css">
+    <style>
+        td{
+            color: cornflowerblue;
+            background-color: aquamarine;
+            font-weight: bold;
+            font-family: 궁서;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="check">
+        <h3>로그인 화면</h3>
+        <table border="0">
+            <tr>
+                <td>아이디</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>패스워드</td>
+                <td><input type="password" name="" id=""></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" style="background-color: lime;">
+                    <button style="background-color: red; 
+                    color: green;">
+                        로그인</button>
+
+                </td>
+            </tr>
+
+        </table>
+        <hr>
+        <h3>회원가입 화면</h3>
+        <table>
+            <tr>
+                <td>가입할 id</td>
+                <td><input type="text" name="id"></td>
+            </tr>
+            <tr>
+                <td>가입할 pw</td>
+                <td><input type="password" name="pw"></td>
+            </tr>
+            <tr>
+                <td>가입할 이름</td>
+                <td><input type="text" name="name" placeholder="홍길동"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>성별</td>
+                <td><input type="radio" name="gender" id="남자">남</td>
+                <td><input type="radio" name="gender" id="여자">여</td>
+            </tr>
+            <tr>
+                <td>취미</td>
+                <td><input type="checkbox" name="hob" id="달리기">달리기</td>
+                <td><input type="checkbox" name="hob" id="동영상보기">동영상보기</td>
+                <td><input type="checkbox" name="hob" id="인터넷서핑">인터넷서핑</td>
+            </tr>
+            <tr>
+                <td>전화번호 통신사</td>
+                <td><select name="통신사" id="통신사">
+                        <option value="SKT">SKT</option>
+                        <option value="KT" selected>KT</option>
+                        <option value="LG">LG</option>
+                    </select></td>
+                <td></td>
+            </tr>
+        </table>
+
+
+
+    </form>
+</body>
+
+</html>

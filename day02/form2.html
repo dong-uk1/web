@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="out0.css">
+    <style>
+        textarea{
+            background-color: aqua;
+        }
+        #find{
+            background-color: black;
+            color: white;
+        }
+        #tel{
+            background-color: rgb(63, 23, 209);
+            color: rgb(227, 226, 235);
+        }
+        #phone{
+            background-color: beige;
+            color: blueviolet;
+        }
+        .login{
+            background-color: blue;
+            color: lime;
+        }
+        .hob{
+            background-color: aquamarine;
+            color: blue;
+        }
+        .day{
+            background-color: brown;
+            color: beige;
+        }
+        /* #은 하나만 선택, .은 여러개 클래스 선택 */
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>검색할 단어를 입력하세요.</h1>
+        <hr>
+        검색할 단어 입력 : <input type="text" name="find" id="find" value="자동차"> <button>검색</button>
+        <!-- id는 개별적인 것 class는 묶음 -->
+    </form>
+    <hr>
+    <form action="check">
+        <h3>로그인 화면</h3>
+        아이디 : <input type="text" class="login">
+        패스워드 : <input type="password" class="login">
+        <button>로그인</button>
+    </form>
+    <hr>
+    <form action = "member">
+        <h3>회원가입 화면</h3>
+        가입할 id : <input type="text" name="id"> <br>
+        가입할 pw : <input type="password" name="pw"> <br>
+        가입할 이름 : <input type="text" name="name" placeholder="홍길동"> <br>
+        성별 
+        <input type="radio" name="gender" id="남자">남
+        <input type="radio" name="gender" id="여자">여<br>
+        <!-- 컨트롤 알트 아래로 > 한 줄 복사 -->
+        <!-- 컨트롤 d > 한 줄 삭제 -->
+        <!-- 알트 화살표(아래) > 한 줄 이동 -->
+        <!-- 라디오는 name을 동일하게 -->
+        취미 
+        <input type="checkbox" name="hob1" class="hob">달리기
+        <input type="checkbox" name="hob2" class="hob">동영상보기
+        <input type="checkbox" name="hob3" class="hob">인터넷서핑
+        <br>
+        전화번호 통신사 <select name="통신사" id="tel">
+            <option value="SKT">SKT</option>
+            <option value="KT" selected >KT</option>
+            <option value="LG">LG</option>
+            <!-- 뒤의 글자들은 선택을 돕는것이지 
+                실제 전달되는 값은 value안에 있는 값이다 -->
+            </select>
+            <input type="number" name="number" placeholder="010-1234-5678" id="phone"> 
+            <br>
+            생년월일 <input type="date" class="day"> 
+            <br>
+            가입시기 <input type="datetime-local" class="day">
+            <br>
+            가입한 주 : <input type="week" class="day">
+            <br>
+            하고 싶은 말 <textarea name="word" id="word" cols="30" 
+            rows="10" placeholder="100자 이내"></textarea>
+        </textarea>
+        
+    </form>
+</body>
+
+</html>
