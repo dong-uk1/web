@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            /* border-radius: 50px 10px 30px 20px; */
+            /* 모서리 왼쪽 위 기준으로 시계방향 1 2 3 4번째 모서리 설정 */
+            text-align: center;
+            /* background-color: aqua; */
+        }
+
+        /* child 중에 몇번째, ul의 자손이지 li의 자손이 아님 */
+        li:nth-child(2n) {
+            background-color: orange;
+        }
+
+        li:nth-child(2n-1) {
+            background-color: yellow;
+        }
+
+        li:first-child {
+            background-color: aqua;
+            border-radius: 50px 0 0 50px;
+        }
+
+        li:last-child {
+            background-color: blueviolet;
+            border-radius: 0 50px 50px 0;
+        }
+        #total{
+            width: 800px;
+            height: 800px;
+            background-color: lightgreen;
+        }
+
+        #top{
+            width: 800px;
+            height: 100px;
+            background-color: lime;
+            padding: 2px;
+            font-weight: bold;
+            color: blue;
+        }
+
+        #top2{
+            background-color: black;
+            color: yellow;
+            border-radius: 100px 10px;
+            width: 250px;
+            height: 100px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+        }
+        #center{
+            color: blue;
+            font-family: 궁서체;
+            font-weight: bold;
+
+        }
+        
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div id="total">
+            <div id="top">
+                <ul>
+                    <li>
+                        <a href="member.html">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="product.html">제품정보</a>
+                    </li>
+                    <li>
+                        <a href="bbs.html">게시판</a>
+                    </li>
+                    <li>
+                        <a href="basket.html">장바구니</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="top2">
+                고정된 화면이 보이는 부분
+            </div>
+
+            <div id="center">
+                <table border="1">
+                    <tr><td>1</td><td>포테이토</td><td>후라이드 포테이토</td><td>1000원</td><td><img src="img/sing.png" alt="" height="100" width="100"></td></tr>
+                    <tr><td>1</td><td>포테이토</td><td>후라이드 포테이토</td><td>1000원</td><td><img src="img/sing.png" alt="" height="100" width="100"></td></tr>                    
+                </table>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>

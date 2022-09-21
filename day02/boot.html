@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+  <style>
+    #sign-in{
+      width: 300px;
+      height: 350px;
+      border-style: solid;
+      padding: 10px;
+      top: 5px;
+      right: 5px;
+      position: fixed;
+
+      /* background-color: aqua; */
+    }
+    
+    .container{
+      border-style: dotted;
+      top: 5px;
+      left: 600px;
+      position: fixed;
+      width: 700px;
+      }
+      
+    .other{
+      width: 500px;
+      top: 400px;
+      left: 700px;
+      position: fixed;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div id="all">
+
+  <div id="sign-in">
+    <h2>Sign-in</h2>
+    <p>E-mail site</p>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <label for="usr">Name:</label>
+        <input type="text" class="form-control" id="usr" name="username">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" name="password">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+
+  <div class="container">
+    <h2>Mail Address</h2>
+    <p>My Team:</p>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td> <a href="mailto:john@example.com">john@example.com</a> </td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td><a href="mailto:jmary@example.com">jmary@example.com</a></td> 
+          
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td><a href="mailto:july@example.com">july@example.com</a></td> 
+          
+        </tr>
+        <tr>
+          <td>Kim</td>
+          <td>JinHwang</td>
+          <td><a href="mailto:JHK@example.com">JHK@example.com</a></td> 
+          
+      </tbody>
+    </table>
+  </div>
+
+  <div class="other" >
+    <h2>Another Group</h2>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">First Group</a>
+      <a href="#" class="list-group-item list-group-item-action">Second Group</a>
+      <a href="#" class="list-group-item list-group-item-action">Third Group</a>
+    </div>
+  </div>
+
+</div>
+
+
+
+</body>
+
+</html>

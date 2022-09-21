@@ -1,3 +1,7 @@
+/* 기본 선택자 : 태그 id class */
+/* id class 는 css에도 가능, #과 .을 써서 */
+/* html에서는 style 태그 박으면 사용 가능 */
+
 body{
     text-align: center;
 }

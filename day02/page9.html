@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+            float: left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            /* border-radius: 50px 10px 30px 20px; */
+            /* 모서리 왼쪽 위 기준으로 시계방향 1 2 3 4번째 모서리 설정 */
+            text-align: center;
+            /* background-color: aqua; */
+        }
+        /* child 중에 몇번째, ul의 자손이지 li의 자손이 아님 */
+        li:nth-child(2n){
+            background-color: orange;
+        }
+        li:nth-child(2n-1){
+            background-color: yellow;
+        }
+        li:first-child{
+            background-color: aqua;
+            border-radius: 50px 0 0 50px;
+        }
+        li:last-child{
+            background-color: blueviolet;
+            border-radius: 0 50px 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div id="d1">
+            <ul>
+                <li>회원가입</li>
+                <li>제품정보</li>
+                <li>게시판</li>
+                <li>장바구니</li>
+            </ul>
+        </div>
+
+    </form>
+</body>
+</html>

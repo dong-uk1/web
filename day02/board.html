@@ -11,7 +11,8 @@
             background-color: pink;
         }
         #button{
-            color: lime;
+            color: green;
+            font-weight: bold;
         }
         .ti{
             background-color: aliceblue;
@@ -26,13 +27,16 @@
             text-decoration: underline;
             color: blue;
         }
+        td:hover{
+            background-color: lemonchiffon;
+        }
         
     </style>
 </head>
 <body>
     <form action="">
         <table border="1">
-            <tr><td>항목</td><td colspan="2">입력</td></tr>
+            <tr style="font-weight: bold;"><td>항목</td><td colspan="2">입력</td></tr>
             <tr><td class="ti">번호</td><td colspan="2"><input type="text"></td></tr>
             <tr><td class="ti">제목</td><td colspan="2"><input type="text"></td></tr>
             <tr><td class="ti">내용</td><td colspan="2"><input type="text"></td></tr>
