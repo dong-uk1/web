@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+    function idcheck(){
+        id = document.getElementById("id").value
+        if ( id.length >= 5 ) {
+            result = "5글자 이상입니다. 유효합니다."
+        
+        } else {
+            result = "5글자 미만입니다. 재입력해주세요"
+             
+        }
+        
+        document.getElementById('d1')
+        d1.innerHTML = result
+        
+    }
+
+    function pwcheck(){
+
+    }
+
+</script>
+
+</head>
+<body>
+    아이디 : <input type="text" id="id"> 
+    <button onclick="idcheck()"> 글자 수 체크 </button><br>
+    비밀번호 : <input type="text" id="pw1"><br>
+    비밀번호 확인 : <input type="text" id="pw2">
+    <button onclick='pwcheck()'> 비밀번호 확인 </button ><br>
+    <hr>
+
+    <div id = 'd1'></div>
+    <div id = 'd2'></div>
+
+    
+</body>
+</html>

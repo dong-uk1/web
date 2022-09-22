@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 버튼(요청) 하나당 함수 하나
+        function test(){
+            alert('테스트 기능 처리')
+        }
+       
+        function add(x, y){
+            alert('더하기 기능 처리')
+            alert('더한 값의 결과 : ' + (x + y))
+            
+        }
+       
+        function minus(x, y){
+            alert('빼기 기능 처리')
+            alert('뺀 값의 결과 : ' + (x - y))
+        }
+       
+
+
+    </script>
+</head>
+<body>
+    <button onclick="test()" > 테스트를 해 보자 </button><br>
+    <button onclick="add(200, 100)"> 더해보자 </button><br>
+    <button onclick="minus(500, 100)"> 빼보자 </button>
+    
+</body>
+</html>
