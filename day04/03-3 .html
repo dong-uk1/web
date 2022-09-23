@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+
+    <script>
+
+        $(function () {
+            $('#b1').click(function () {
+
+                pay = $('#pay').val()
+                pay = parseFloat(pay)
+
+                ww = $("#way").val()
+
+                if (ww == 'way1') {
+                    cost = (pay * 8 / 10)
+
+                }
+                else if (ww == 'way2') {
+                    cost = (pay * 0.9)
+
+                }
+                else {
+                    cost = pay
+                }
+
+                $('#d1').append(cost + '<br>')
+
+            })
+        })
+
+        $(function () {
+            $(".widget input[type=submit], .widget a, .widget button").button();
+            $("button, input, a").on("click", function (event) {
+                event.preventDefault();
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    결제금액 : <input type="number" id="pay"><br>
+    1)계좌이체, 2)신용카드, 3)휴대폰 결제 <br>
+    결제수단 : <select id="way">
+        <option value="way1" id="way1">계좌이체</option>
+        <option value="way2" id="way2">신용카드</option>
+        <option value="way3" id="way3">휴대폰 결제</option>
+        <!-- 결제수단 : <input type="text" id="way"> -->
+
+    </select>
+    <div class="widget">
+        <button id="b1" >결제</button>
+        <!-- 버튼 색깔 바꾸기 -->
+    </div>
+
+    <hr>
+
+    <div id="d1"></div>

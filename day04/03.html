@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+
+    </script>
+   
+    <script>
+     
+        $(function () {
+            $('#b1').click(function () {
+
+                idval = $('#id').val()
+
+                if (idval.length >= 5) {
+                    // alert('유효합니다')
+                    $('#d1').append('유효합니다<br>')
+
+                } else {
+                    // alert('5자 미만입니다')
+                    $('#d1').append('5자 미만입니다<br>')
+                    
+                }
+                
+            })
+            
+
+
+        })
+
+    </script>
+</head>
+<body>
+    아이디 : <input type="text" value="" id = 'id'><br>
+    <button id ='b1'> 아이디 글자 수 체크 </button>
+    <hr>
+
+    패스워드1 : <input type="text" value="" id ="pw1"><br>
+    패스워드2 : <input type="text" value="" id ="pw2"><br>
+    <hr>
+    
+    <button id ='b2'> 패스워드 일치 확인 </button>
+    <hr>
+    <div id = "d1">
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+
+    </script>
+   
+    <script>
+     
+        $(function () {
+            $("#b1").click(function () {
+                //비동기 통신(ajax)를 해라
+                $.ajax({
+                    url : '06-1.html' ,
+                    success : function (res) {
+                        // alert('응답받은 데이터는 ' + res)
+                        $('#d1').append('응답받은 데이터는 ' + res + '<br>')
+                    }
+                })  
+            })
+
+            $("#b2").click(function () {
+                //비동기 통신(ajax)를 해라
+                $.ajax({
+                    url : '06-2.html' ,
+                    success : function (res) {
+                        // alert('응답받은 데이터는 ' + res)
+                        $('#d2').append('응답받은 데이터는 ' + res + '<br>')
+                    }
+                })  
+            })
+
+            $("#b3").click(function () {
+                //비동기 통신(ajax)를 해라
+                $.ajax({
+                    url : '06-3.html' ,
+                    success : function (res) {
+                        // alert('응답받은 데이터는 ' + res)
+                        $('#d3').html('응답받은 데이터는 ' + res + '<br>')
+                        
+                    }
+                })  
+            })
+
+
+        })
+
+    </script>
+</head>
+<body>
+    <button id="b1">06-1.html 로 비동기 통신</button><br>
+    <button id="b2">06-2.html 로 비동기 통신</button><br>
+    <button id="b3">06-3.html 로 비동기 통신</button><br>
+    <hr>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+
+    </script>
+    <!-- 스크립트 한 번 더 써줘야함 위에는 연결용, 아래는 코딩용 스크립트-->
+    <script>
+
+        $(function () {
+            $('#bt').click(function () {
+
+
+                // alert('브라우저가 ram에 문서를 tree구조로 읽어들임')
+                cost = $('#cost').val()
+                count = $('#count').val()
+                cost = parseInt(cost)
+                count = parseInt(count)
+
+                price = cost * count
+
+                alert(price)
+
+            })
+
+        })
+
+    </script>
+</head>
+
+<body>
+    커피가격 : <input type="text" id='cost'><br>
+    커피수량 : <input type="text" id="count"><br>
+    <button id="bt">결과</button>
+
+</body>
+
+</html>
